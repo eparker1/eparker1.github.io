@@ -52,6 +52,12 @@ header {
     color: black;
 }
 
+@media(max-width:500px){
+    .searchbar {
+        top: 120px;
+    }
+}
+
 .submit {
     padding: 10px 30px 10px 30px;
     background-color: red;
@@ -211,6 +217,13 @@ header {
     .section1 {
         display: block;
     }
+
+    .center {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: none;
+    }
 }
 
 .color {
@@ -323,6 +336,7 @@ header {
 
 @media(max-width:500px){
     .list {
+        width: 90%;
         margin-left: -20px;
     }
 }
@@ -351,7 +365,7 @@ video {
     margin-bottom: 90px;
 }
 
-@media(max-width:952px){
+@media(max-width:500px){
     .para1 {margin-bottom: 50px;}
 }
 
@@ -876,6 +890,10 @@ footer {
 @media(max-width:700px){
     .UoD {
         width: 400px;
+    }
+
+    .instagram {
+        width: 300px;
     }
 }
 

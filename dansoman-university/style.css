@@ -1,5 +1,5 @@
 @media all{
-    body {width: auto;
+    body {
     overflow-x: hidden;
     }
 }
@@ -54,7 +54,7 @@ header {
 
 @media(max-width:500px){
     .searchbar {
-        top: 120px;
+        display: none;
     }
 }
 
@@ -216,14 +216,9 @@ header {
 @media(max-width: 952px) {
     .section1 {
         display: block;
+        text-align: center;
     }
 
-    .center {
-        text-align: center;
-        width: 90%;
-        margin: auto;
-        padding: none;
-    }
 }
 
 .color {
@@ -299,9 +294,23 @@ header {
     text-align: center;
     position: relative;
     top: 0px;
-    animation: slide 10s steps(5) infinite;
+    animation: slide 15s steps(5) infinite;
 
 }
+
+@media(max-width:400px){
+    .each{
+        width: 100%;
+        border-radius: 20px;
+        animation: slide 10s steps(6) infinite;
+        top: 28px;
+
+    }
+
+    
+
+}
+
 
 @keyframes slide {
     100% {top: -128px;
@@ -323,8 +332,12 @@ header {
         text-align: center;
     }
 
+    .each {
+        width: 100%;
+    }
+    
     .list {
-        width: 400px;
+        width: 90%;
         margin: auto;
     }
 

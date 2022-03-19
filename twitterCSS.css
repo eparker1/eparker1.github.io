@@ -1,0 +1,120 @@
+body {
+    background-color: darkslategrey;
+
+}
+
+
+.section {
+    background-image: url("IMG_E0917.JPG") ;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: top;
+    background-color: darkslategray;
+    object-fit: fill;
+    height: 150px;
+    padding: 30px;
+    border: 10px;
+    margin-bottom: 0px;
+    
+}
+
+
+.firstprofile {
+    height : 150px;
+    border-width: 100px;
+    clip-path: circle();
+
+}
+
+.profiletexts {
+    text-indent: 30px;
+    background-color: darkslategrey;
+    height: 250px;
+    background-attachment: fixed;
+}
+
+.margin {
+    font-size: x-large;
+    font-weight: 900;
+    
+}
+
+.linkeditprofile {
+    color: black;
+    text-decoration: none;
+}
+
+.border {
+    float: right;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 20px;
+    width: 150px;
+}
+
+.linespacing {
+    margin-bottom: 30px;
+}
+
+.border1table {
+    word-spacing: 372.5px;
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+
+.profile {
+    background-attachment: scroll;
+}
+
+
+.profilepics {
+    height : 150px;
+    border-width: 100px;
+    clip-path: circle();
+    float: left;
+    margin-right: 10px;
+}
+
+.likes {
+    text-indent: 120px;
+    word-spacing: 50px;
+}
+
+.quotedtweets {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 100px;
+    width: 500px;
+    position: relative;
+    left: 90px;
+}
+
+.profilepicsmall {
+    height : 50px;
+    border-width: 20px;
+    clip-path: circle();
+    float: left;
+    margin-right: 10px;
+
+}
+
+.move-back {
+    position: relative;
+    right: 90px;
+}
+
+.bigquotedtweets {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+
+}
+
+.border-shape {
+    border-bottom-right-radius: 10px;                             
+    border-bottom-left-radius: 10px;                             
+}

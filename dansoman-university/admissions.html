@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+    <head>
+        <title>admissions</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header style = "background-color: black; color: white; padding: 20px;">
+        <h1 align= "center"> Undergraduate Admission Requirements </h1>
+        <h2 align= "center"> <b> based on Ghana Educational Framework </b></h2>
+        <h3 align= "center"> <small> Select your Area of Study and Region </small></h3>
+        Area of Study: <input id = "study" type = "text"  list= "study areas"/>
+        <datalist id = "study areas">
+            <option value = "Area of study">
+            <option value = "Arts">
+            <option value = "Applied Arts">
+            <option value = "Arts/Computer Science">
+            <option value = "Arts/Science">
+            <option value = "Applied Management">
+            <option value = "Business">
+            <option value = "Computer Science">
+            <option value = "Education">
+            <option value = "Engineering">
+            <option value = "Environment and Natural Resources">
+            <option value = "Forestry">
+            <option value = "Geomatics">
+            <option value = "Health Sciences">
+            <option value = "Medical laboratory Science">
+            <option value = "Nursing">
+            <option value = "Leadership Studies">
+            <option value = "Recreation and Sports Studies">
+            <option value = "Software Engineering">
+        </datalist>
+           Your region: <input id="region" type= "text" list= "regions"/>
+           <datalist id = "regions">
+               <option value = "Your region">
+               <option value = "Accra">
+               <option value = "Kumasi">
+               <option value = "Takoradi">
+               <option value = "Bolgatanga">
+               <option value = "Tarkwa">
+               <option value = "Tema">
+               <option value = "Dansoman">
+               <option value = "Prampram">
+               <option value = "Nsawam">
+               <option value = "Konongo">
+               <option value = "Sunyani">
+               <option value = "Techiman">
+           </datalist>      
+        </header>
+    <article align = "center">
+        <h1> Ghanaian Students </h1>
+        <p> Ghanaian applicants must meet specific criteria for admission </p>
+        <p> <a href = "">Ghanaian admission requirements</a></p>
+        <p> <a href = "">Program Specific requirements</a></p>
+        <section style="background-color: black; color: white; padding: 20px;">
+        <h1> International students </h1>
+        <p> International students must meet specific criteria for admission </p>
+        <p> <a href = "">International admission requirements </a></p>
+        <p> <a href = "">English-Language requirements</a></p>
+        <p> <a href = "">Country-specific requirements</a></p>
+        <p> <a href = "">Program Specific requirements</a></p></section>
+        <section style = "background-color: wheat; color: white; padding : 20px;">
+        <p><h1 style = "color: black;">Next steps</h1></p>
+        <p> <a href = "">Tuition & Fees </a></p>
+        <p> <a href = "">Scholarships</a></p>
+        <p> <a href = "">Apply - Ghanaian</a></p>
+        <p> <a href = "">Apply - International</a></p>
+        </section>
+        <section style="background-color: black; color: white; padding: 20px;">
+        <img src = "https://thumbs.dreamstime.com/z/education-badge-logo-design-university-high-school-emblem-education-badge-logo-design-university-high-school-emblem-151924849.jpg" width = "50px" height = "50px" border = "1px" alt = "school badge" <p>
+            <strong style= "font-size: large;">UOD <br> <p style = "font-size: small ;">UNIVERSITY OF DANSOMAN</p></strong>
+        </p>
+        <p align="left">resources</p>
+                
+        </section>
+        <footer style="font-size: smaller; background-color: wheat;"><img src ="data:image/png;base64,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"width = "50px" height = "50px" border = "1px" alt = "copyright"><a href ="file:///C:/Users/111122222233444/Desktop/national%20service/HTML/project.html">University of Dansoman</a>>
+            
+        </footer>
+    </article>
+    </body>
+</html>

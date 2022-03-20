@@ -64,10 +64,14 @@ body {
     font-size: large;
 }
 
-
-.profile {
-    background-attachment: scroll;
+.overflow {
+    height: 600px;
+    width: 1500px ;
+    background-color: darkslategray;
+    overflow: scroll;
+    overflow: auto;
 }
+
 
 
 .profilepics {
@@ -118,3 +122,4 @@ body {
     border-bottom-right-radius: 10px;                             
     border-bottom-left-radius: 10px;                             
 }
+

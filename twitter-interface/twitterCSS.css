@@ -75,7 +75,7 @@ body {
 }
 
 .overflow {
-    height: 100%;
+    height: 100vh;
     width: 1600px ;
     background-color: darkslategray;
     overflow: scroll;

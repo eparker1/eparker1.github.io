@@ -135,7 +135,7 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     height: 500px;
-    width: 500px;
+    width: 501px;
     position: relative;
     left: 180px;
 
@@ -149,4 +149,25 @@ body {
 .views-position {
     position: relative;
     left: 90px;
+}
+
+.wrap {
+    width: 1000px ;
+    word-wrap: break-word;
+}
+
+.clear-indent {
+    height : 50px;
+    border-width: 20px;
+    clip-path: circle();
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    right: 190px;
+
+}
+
+.move-forward {
+    position: relative;
+    left: 50px;
 }

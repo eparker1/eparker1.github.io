@@ -1,2 +1,1 @@
-# twitter-interface
-a little thing i did after html and a little bit of css lessons
+developing my skills to become a full stack web developer.

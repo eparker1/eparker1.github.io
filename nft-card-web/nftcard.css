@@ -3,19 +3,20 @@
     src: url("https://fonts.google.com/specimen/Outfit");
 }
 
+
 body {
     background-color: hsl(217, 54%, 11%);
     width: 1440px;
-    overflow: hidden;
     font-size: 18px;
     font-family: Outfit;
 }
+
 
 .card {
     height: 600px;
     width: 375px;
     color: white;
-    transform: translate(510.5px,30px);
+    transform: translate(510.5px, 30px);
     border-radius: 20px;
     background-color: hsl(216, 50%, 16%);
     filter: drop-shadow(10px 15px 5px rgba(0, 1, 51, 0.3))
@@ -24,6 +25,7 @@ body {
     drop-shadow(-10px -25px 5px rgba(0, 1, 51, 0.1));
 
 }
+
 
 .hove {
     width: 345px;
@@ -122,3 +124,14 @@ body {
     color: aqua;
     cursor: pointer;
 }
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+

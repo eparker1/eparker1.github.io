@@ -18,6 +18,17 @@ body {
   
 }
 
+@media screen {
+    .code-section {
+        height: 500px;
+        width: 300px;
+    }
+
+    .body {
+        width: 375px;
+    }
+}
+
 .code-image {
     width: 280px;
     height: 300px;

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+}
+
+.body {
+    background: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+}
+
+.container {
+    width: 90%;
+    display: flex ;
+    margin: 3%;
+    margin-top: 1%;
+}
+
+@media(max-width=700px) {
+    .container{
+        width: 90%;
+        
+    }
+}
+
+.circle {
+    float: left;
+    height: 65px;
+    width: 65px;
+    border-radius: 32.5px;
+    background: white;
+    margin: 20px;
+}
+
+.circle-purple {
+    float: left;
+    height: 65px;
+    width: 65px;
+    border-radius: 32.5px;
+    background: hsl(263, 55%, 52%);
+    margin: 20px;
+}
+
+.image {
+    float: left;
+    border-width: 5px;
+    clip-path: circle();
+    margin: 7%;
+}
+
+.verified-opacity {
+    opacity: 50%;
+}
+
+.name {
+    position: relative;
+    top: 5%;
+
+}
+.daniel {
+    height: 320px;
+    width: 500px;
+    border-radius: 5%;
+    background: url("bg-pattern-quotation.svg");
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    margin-right: 5%;
+}
+
+.paragraph {
+    margin-top: 7%;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.bold {
+    font-size: large;
+    font-weight: 600;
+}
+
+.opacity70 {
+    font-size: small;
+    opacity: 70%
+}
+
+.jonathan {
+    height: 320px;
+    width: 300px;
+    border-radius: 5%;
+    margin-right: 5%;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.kira {
+    height: 650px;
+    width: 250px;
+    border-radius: 5%;
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+}
+
+.Jeanette {
+    position: absolute;
+    top: 55%;
+    height: 300px;
+    width: 250px;
+    border-radius: 5%;
+    margin-right: 5%;
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+}
+
+.patrick {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    height: 300px;
+    width: 500px;
+    border-radius: 5%;
+    margin-right: 5%;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}

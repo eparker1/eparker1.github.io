@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url("https://fonts.google.com/specimen/Bai+Jamjuree");
+}
+
+body {
+    width: 1440px;
+    background: url("bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Bai Jamjuree";
+    color: hsl(210, 10%, 33%);
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+.logo {
+    margin-bottom: 20px;
+    margin-left: 50%;
+
+}
+
+.writing {
+    width: 500px;
+    margin-left: 38%;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: xx-large;
+    margin-bottom: 0px;
+    
+}
+
+.opacity {
+    opacity: 70%;
+    font-size: 18px;
+    word-spacing: normal;
+    font-weight: 400;
+}
+
+.opacity2 {
+    opacity: 70%;
+    font-size: 18px;
+    word-spacing: normal;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    margin-left: -12%;
+}
+
+.second {
+    margin-right: 2%;
+}
+
+.border {
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    left: 10%;
+    margin-bottom: 50px;
+}
+
+.green {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.blue {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.paragraph2 {
+    width: 500px;
+    margin-left: 38%;
+    margin-bottom: 50px;
+}
+
+.bold2 {
+    width: 455px;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.margin {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.margin2 {
+    margin-right: 100px;
+    margin-left: 80px;
+}
+
+.laptop {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: -100px;
+    margin-bottom: 50px;
+}
+
+.computer-image {
+    margin-right: 100px;
+}
+
+.text1 {
+    margin: 20px;
+    display: inline flex;
+}
+
+.text-bold1 {
+    width: 300px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.text-para {
+    margin-bottom: 50px;
+}
+
+.image-devices {
+    margin-left: 22%;
+}
+
+.container {
+    display: flex;
+    margin-left: 21%;
+    margin-bottom: 100px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.text-bold2 {
+    width: 300px;
+    font-weight: 600;
+    font-size: larger;
+    position: relative;
+    left: -40px;
+}
+
+.opacity3 {
+    width: 350px;
+    opacity: 70%;
+    font-size: 18px;
+    word-spacing: normal;
+    font-weight: 400;
+    position: relative;
+    left: -130px;
+}
+
+.opacity4 {
+    width: 450px;
+    opacity: 70%;
+    font-size: 18px;
+    word-spacing: normal;
+    font-weight: 400;
+    position: relative;
+    left: -130px;
+}
+
+.margin1 {
+    margin-left: 10px;
+}
+
+.margin3 {
+    margin-left: 70px;
+}
+
+.margin4 {
+    margin-left: 100px;
+}
+
+.move {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image-container {
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: 100px;
+}
+
+.margin-right {
+    margin-right: 100px;
+}
+
+.reduce {
+    height: 30px;
+}
+
+footer {
+    background: hsl(201, 11%, 66%);
+    display: flex;
+    height: 100px;
+}
+
+.logo-foot {
+    height: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    position: relative;
+    top: 25%;
+}
+
+.foot {
+    display: flex;
+    position: relative;
+    top: 25%;
+    margin-right: 30%;
+}
+
+.words {
+    margin-right: 30px;
+    margin-top: -2%;
+}
+
+.next {
+    margin-top: 10%;
+    text-align: right;
+}

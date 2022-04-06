@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Open Snas", "Poppins";
+    src: url("https://fonts.google.com/specimen/Open+Sans"),
+    url("https://fonts.google.com/specimen/Poppins");
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+.head {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* background-color: red; */
+}
+
+.head2 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+
+
+.link {
+    text-decoration: none;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    padding: 10px ;
+    border-radius: 30px;
+ 
+}
+
+.paragraph1 {
+    text-align: center;
+}
+
+.bold1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
+.bold2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;
+}
+
+.para {
+    font-weight: 400;
+    text-align: center;
+}
+
+.para2 {
+    font-weight: 400;
+    text-align: left;
+    width: 500px;
+}
+
+.border {
+    width: 200px;
+    padding: 3px;
+    border-radius: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.bottom {
+    margin-bottom: 50px;
+}
+
+.top {
+    margin-top: -35px;
+}
+
+.width {
+    width: 70%;
+}
+
+.bg-text {
+    position: absolute;
+    z-index: 3;
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+.bg-height {
+    height: 300px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.bg-height2 {
+    height: 500px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.users {
+    position: relative;
+    float: right;
+    width: 400px;
+    margin-right: 150px;
+    margin-top: -550px;
+    z-index: 3;
+}
+
+.convo-image {
+    width: 500px;
+}
+
+
+.margin {
+    position: relative;
+    top: 60px;
+}
+
+.color {
+    background-color: hsl(192, 100%, 9%);
+    width: 100%;
+    margin-top: -10px;
+    color: white;
+}
+
+.first {
+    width: 300px;
+} 
+
+.wrap {
+    margin-right: 10px;
+}
+
+.huddle {
+    font-weight: 900;
+    color: white;
+    font-size: xx-large;
+    position: relative;
+    top: -10px;    
+}
+
+.icon-twitter {
+    display: inline;
+    margin-right: 20px;
+}
+
+.submit {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+}

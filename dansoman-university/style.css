@@ -1,0 +1,260 @@
+
+
+header {
+    height: 300px;
+    width: 100%;
+    background-image: url("./pictures/pexels-pixabay-256490.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.label {
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 50px;
+    color: red;
+    float: left;
+    margin-left: 20px;
+}
+
+.links {
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    list-style: none;
+}
+
+a {
+    box-sizing: border-box;
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+a:hover {
+    font-size: 25px;
+
+}
+
+.searchbar {
+    position: relative;
+    top: 150px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+.submit {
+    padding: 10px 30px 10px 30px;
+    background-color: red;
+    opacity: 60%;
+    color: white;
+}
+
+.submit:hover {
+    opacity: 1;
+}
+
+.bar {
+    padding: 10px 30px 10px 30px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+
+}
+
+@media(max-width: 952px){
+    .label {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    a {
+        font-size: 16px;
+        color: white;
+
+
+    }
+
+    video {
+        position: relative ;
+        z-index: 2;
+    }
+
+    ul {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+@media(max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background-color: red;
+        top: 0;
+        right: -270px;
+        text-align: center;
+        transition: all 5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 50px 20px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+
+    }
+
+    a:hover, .fa-xmark:hover {
+        font-size: 25px;
+    }
+
+    #check:checked ~ ul{
+        left: 600px;
+
+    }
+
+    .fa-xmark, .fa-bars {
+        color: white;
+    }
+
+}
+
+.border {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    margin-bottom: 30px;
+}
+
+.bold {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    box-shadow: -5px -5px  white, 5px -5px  white;
+
+}
+
+.section1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.bold1 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.border1 {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.border1:hover {
+    box-shadow: -5px -5px 10px red, 5px -5px 10px red;
+}
+
+@media(max-width: 952px) {
+    .section1 {
+        display: block;
+    }
+}
+
+.color {
+    background-color: lightgray;
+
+}
+
+.section2 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+
+}
+
+.first-image {
+    background-image: url("./pictures/pexels-kampus-production-5940713.jpg");
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.top-text {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.each p{
+    list-style: none;
+
+}
+
+
+.each {
+    font-size: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 410px;
+}
+
+/* .animate ul list p {
+    position: relative;
+}
+
+.animate ul li p::after {
+    content: "";
+} */

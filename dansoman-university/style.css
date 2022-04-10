@@ -136,7 +136,7 @@ a:hover {
     }
 
     #check:checked ~ ul{
-        left: 500px;
+        left: 450px;
 
     }
 
@@ -279,6 +279,7 @@ a:hover {
     list-style: none;
     font-size: 20px;
     margin-right: 20px;
+    margin-bottom: 0.1px;
     border: 1px solid black;
     background-color: black;
     color: white;
@@ -290,7 +291,7 @@ a:hover {
 }
 
 @keyframes slide {
-    100% {top: -125px;
+    100% {top: -128px;
 
     }
 }
@@ -358,7 +359,7 @@ video {
 .section4 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .bold3 {
@@ -383,5 +384,46 @@ video {
 @media(max-width:952px) {
     .para2 {
         margin-left: 0px;
+    }
+}
+
+.bold3 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.para3 {
+    font-size: 25px;
+}
+
+.section5 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.subsection {
+    display: flex;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    height: 300px;
+    margin-right: 5px;
+}
+
+@media(max-width:952px){
+    .subsection {
+        flex-direction: column;
+    }
+
+    .story {
+        margin-bottom: 20px;
     }
 }

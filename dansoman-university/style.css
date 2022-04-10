@@ -136,7 +136,7 @@ a:hover {
     }
 
     #check:checked ~ ul{
-        left: 600px;
+        left: 500px;
 
     }
 
@@ -206,18 +206,43 @@ a:hover {
 
 .color {
     background-color: lightgray;
-
+    margin-bottom: 30px;
 }
 
 .section2 {
-    width: 90%;
-    margin: auto;
     display: flex;
+
+}
+
+@media(max-width:952px){
+    .section2 {
+        flex-direction: column;
+    }
 
 }
 
 .first-image {
     background-image: url("./pictures/pexels-kampus-production-5940713.jpg");
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.second-image {
+    background-image: url("./pictures/pexels-rfstudio-3059654.jpg");
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.third-image {
+    background-image: url("./pictures/pexels-august-de-richelieu-4427430.jpg");
     height: 600px;
     width: 500px;
     background-size: cover;
@@ -232,29 +257,131 @@ a:hover {
     margin-top: 20px;
     font-weight: 500;
     font-size: 25px;
+    margin-bottom: 400px;
 }
 
-.each p{
-    list-style: none;
+.animate {
+    display: block;
+}
 
+.list {
+    height: 28px;
+    /* line-height: 40px; */
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    position: static;
+    background: none;
 }
 
 
 .each {
+    list-style: none;
     font-size: 20px;
-    margin: 20px;
+    margin-right: 20px;
     border: 1px solid black;
     background-color: black;
     color: white;
     text-align: center;
     position: relative;
-    top: 410px;
+    top: 0px;
+    animation: slide 10s steps(5) infinite;
+
 }
 
-/* .animate ul list p {
-    position: relative;
+@keyframes slide {
+    100% {top: -125px;
+
+    }
 }
 
-.animate ul li p::after {
-    content: "";
-} */
+.section3 {
+    display: flex;
+}
+
+@media(max-width:952px) {
+    .section3 {
+        flex-direction: column;
+    }
+
+    .section3 {
+        text-align: center;
+    }
+
+    .first-image, .second-image, .third-image {
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+
+    
+}
+
+
+video {
+    height: 400px;
+    width: 400px;
+}
+
+.writing {
+    background: red;
+    margin-bottom: 30px;
+}
+
+.bold2 {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.para1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.margin {
+    margin: 30px 70px 30px 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.border2 {
+    border:1px solid white;
+    width: 300px;
+    text-align: center;
+
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.bold3 {
+    color: red;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.para2{
+    color: black;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-right: 50px;
+}
+
+.link2 {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+@media(max-width:952px) {
+    .para2 {
+        margin-left: 0px;
+    }
+}

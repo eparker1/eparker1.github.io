@@ -2,6 +2,12 @@ body {
     overflow-x: hidden;
 }
 
+/* @media(max-width:952px){
+    body {
+        overflow-x: hidden;
+    }
+} */
+
 header {
     height: 300px;
     width: 100%;
@@ -32,7 +38,7 @@ header {
     padding: 10px;
     text-decoration: none;
     color: red;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .a:hover {
@@ -196,6 +202,10 @@ header {
     line-height: 30px;
 }
 
+.font {
+    font-size: 20px;
+}
+
 .border1:hover {
     box-shadow: -5px -5px 10px red, 5px -5px 10px red;
 }
@@ -213,12 +223,13 @@ header {
 
 .section2 {
     display: flex;
-
+    margin-left: 110px;
 }
 
 @media(max-width:952px){
     .section2 {
         flex-direction: column;
+        margin-left: -0px;
     }
 
 }
@@ -268,7 +279,6 @@ header {
 
 .list {
     height: 28px;
-    /* line-height: 40px; */
     overflow: hidden;
     width: 90%;
     margin: auto;
@@ -312,10 +322,9 @@ header {
     }
 
     .first-image, .second-image, .third-image {
-        margin-left: 80px;
+        margin-left: 150px;
         margin-right: 50px;
     }
-
     
 }
 
@@ -339,7 +348,7 @@ video {
 .para1{
     color: white;
     font-size: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 105px;
 }
 
 .margin {
@@ -349,13 +358,14 @@ video {
 .link {
     text-decoration: none;
     color: white;
+    font-size: 30px;
+
 }
 
 .border2 {
     border:1px solid white;
     width: 300px;
     text-align: center;
-    font-size: 20px;
 }
 
 .border2:hover {
@@ -454,8 +464,9 @@ video {
 }
 
 .row {
+    width: 800px;
     display: flex;
-    margin-left: 180px;
+    margin-left: 250px;
     margin-top: 120px;
     position: absolute;
     z-index: 3;
@@ -463,7 +474,7 @@ video {
 
 .row2 {
     display: flex;
-    margin-left: 180px;
+    margin-left: 250px;
     margin-top: 120px;
     position: relative;
     z-index: 4;
@@ -472,24 +483,20 @@ video {
 
 .row3 {
     display: flex;
-    margin-left: 180px;
+    margin-left: 250px;
     margin-top: 120px;
     position: relative;
     z-index: 4;
     top: 180px;
 }
 
-/* .top {
-    position: absolute;
-    top: -200px;
-
-} */
 
 .explore {
     height: 310px;
     width: 400px;
     background-color: blue;
-    position: relative;
+    position: absolute;
+    left: 0px;
     z-index: 3;
 }
 
@@ -503,6 +510,10 @@ video {
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.lion {
+    margin-left: 400px;
 }
 
 .small-margin {
@@ -528,13 +539,14 @@ video {
     top: -0px;
 }
 
-.small-margin4 {
+.small-margin4-large {
     margin-left: 10px;
     position: absolute;
     z-index: 2;
     color: red;
-    top: 20px;
-    width: 400px;
+    left: 1070px;
+    margin-top: 50px;
+    width: 700px;
 }
 
 .line-width {
@@ -542,15 +554,16 @@ video {
 }
 
 .link4picture1 {
-    background-color: rgba(255, 255, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 400px;
-    position: relative;
-    left: -400px;
+    height: 310px;
+    position: absolute;
+    left: 400px;
     z-index: 3;
 }
 
 .link4picture2 {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: none;
     height: 310px;
     width: 400px;
     position: absolute;
@@ -559,7 +572,7 @@ video {
 }
 
 .link4picture3 {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: none;
     height: 310px;
     width: 400px;
     position: absolute;
@@ -568,7 +581,7 @@ video {
 }
 
 .link4picture4 {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
     height: 310px;
     width: 600px;
     position: absolute;
@@ -576,16 +589,17 @@ video {
     z-index: 3;
 }
 
-.link4picture5 {
-    background-color: rgba(255, 0, 0, 0);
-    height: 620px;
-    width: 600px;
+.link4picture5a {
+    background-color: none;
+    height: 800px;
+    width: 800px;
     position: absolute;
-    left: -0px;
+    left: 990px;
+    margin-top: -30px;
     z-index: 3;
 }
 
-.link4picture2:hover, .link4picture3:hover, .link4picture1:hover, .link4picture4:hover, .link4picture5:hover {
+.link4picture2:hover, .link4picture3:hover, .link4picture1:hover, .link4picture4:hover, .link4picture5:hover, .link4picture5a:hover {
     background-color: rgba(255, 255, 0, 0.3);
 }
 
@@ -597,7 +611,9 @@ video {
     visibility: hidden;
 }
 
-.text-decoration {
+.text-decoration-large {
+    margin-bottom: 100px;
+    width: 150px;
     border: 1px solid purple;
     font-size: 20px;
     text-transform: uppercase;
@@ -606,7 +622,8 @@ video {
     background-color: rgba(128, 0, 128, 6);
 }
 
-.text-culture {
+.text-culture-large {
+    width: 500px;
     border: 1px solid purple;
     font-weight: 700;
     font-size: 35px;
@@ -630,12 +647,39 @@ video {
        
     }
 
+    .small-margin4-large {
+        display: none;
+    }
+
+    .small-margin4 {
+        margin-left: 10px;
+        position: absolute;
+        z-index: 2;
+        color: red;
+        top: 20px;
+        width: 400px;
+    }
+
+    .link4picture5a {
+        display: none;
+    }
+
+    .link4picture5 {
+        background-color: none;
+        height: 640px;
+        width: 600px;
+        position: absolute;
+        left: 0px;
+        margin-top: -30px;
+        z-index: 3;
+    }
+
     .overflow {
         margin-left: 0px;
         margin-top: 120px;
         position: absolute;
         height: 1100px;
-        width: 760px;
+        width: 810px;
         overflow-x: scroll;
         overflow-y: hidden;
     }
@@ -651,7 +695,25 @@ video {
     .phone-culture {
         visibility: visible;
         position: relative;
-        left: -400px;
+        left: 0px;
+    }
+
+    .text-decoration {
+        border: 1px solid purple;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
+        background-color: rgba(128, 0, 128, 6);
+    }
+
+    .text-culture {
+        border: 1px solid purple;
+        font-weight: 700;
+        font-size: 35px;
+        color: white;
+        background-color: rgba(128, 0, 128, 6);
+    
     }
 
     .dots {
@@ -697,3 +759,108 @@ video {
     
 }
 
+footer {
+    background-color: black;
+}
+
+@media (max-width:952px){
+    .section7 {
+        display: flex ;
+        flex-direction: column;
+    }
+
+    .foot-para {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .margin-right {
+        display: none;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+}
+
+.section7 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.icons {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    line-height: 10px;
+}
+
+.instagram:hover {
+    opacity: 0.5;
+}
+
+.insta-text {
+    position: absolute;
+    margin-left: 10px ;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: -50px;
+    z-index: 3;
+}
+
+.top {
+    margin-top: 50px;
+}
+
+.helpful {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.foot-para {
+    display: flex;
+}
+
+.number1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.footer-links {
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.contact-info {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+.UoD {
+    margin-right: 100px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links:hover {
+    opacity: 0.5;
+}
+
+.margin-right {
+    margin-right: 20px;
+}

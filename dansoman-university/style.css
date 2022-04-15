@@ -1,12 +1,9 @@
-body {
+@media all{
+    body {width: auto;
     overflow-x: hidden;
-}
-
-@media(max-width:700px){
-    body {
-        overflow-x: hidden;
     }
 }
+
 
 header {
     height: 300px;
@@ -23,7 +20,6 @@ header {
     font-size: 50px;
     color: red;
     float: left;
-    margin-left: 20px;
 }
 
 .links {
@@ -38,7 +34,7 @@ header {
     padding: 10px;
     text-decoration: none;
     color: red;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .a:hover {
@@ -208,6 +204,7 @@ header {
 
 .border1:hover {
     box-shadow: -5px -5px 10px red, 5px -5px 10px red;
+    cursor: pointer;
 }
 
 @media(max-width: 952px) {
@@ -219,25 +216,23 @@ header {
 .color {
     background-color: lightgray;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .section2 {
     display: flex;
-    margin-left: 110px;
+    justify-content: space-evenly;
 }
 
 @media(max-width:952px){
     .section2 {
         flex-direction: column;
-        margin-left: -0px;
     }
 
 }
 
 .first-image {
     background-image: url("./pictures/pexels-kampus-production-5940713.jpg");
-    height: 600px;
-    width: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -246,8 +241,6 @@ header {
 
 .second-image {
     background-image: url("./pictures/pexels-rfstudio-3059654.jpg");
-    height: 600px;
-    width: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -256,8 +249,6 @@ header {
 
 .third-image {
     background-image: url("./pictures/pexels-august-de-richelieu-4427430.jpg");
-    height: 600px;
-    width: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -266,7 +257,7 @@ header {
 
 .top-text {
     text-align: center;
-    color: black;
+    color: red;
     margin-top: 20px;
     font-weight: 500;
     font-size: 25px;
@@ -278,10 +269,8 @@ header {
 }
 
 .list {
-    height: 28px;
+    height: 26px;
     overflow: hidden;
-    width: 90%;
-    margin: auto;
     position: static;
     background: none;
 }
@@ -291,9 +280,8 @@ header {
     list-style: none;
     font-size: 20px;
     margin-right: 20px;
-    margin-bottom: 0.1px;
-    border: 1px solid black;
-    background-color: black;
+    border: 1px solid red;
+    background-color: red;
     color: white;
     text-align: center;
     position: relative;
@@ -306,6 +294,7 @@ header {
     100% {top: -128px;
 
     }
+
 }
 
 .section3 {
@@ -321,11 +310,15 @@ header {
         text-align: center;
     }
 
-    .first-image, .second-image, .third-image {
-        margin-left: 150px;
-        margin-right: 50px;
+    .list {
+        width: 400px;
+        margin: auto;
     }
-    
+
+    .phone-image {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -337,18 +330,19 @@ video {
 .writing {
     background: red;
     margin-bottom: 30px;
+    height: 400px;
 }
 
 .bold2 {
     color: white;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .para1{
     color: white;
-    font-size: 30px;
-    margin-bottom: 105px;
+    font-size: 20px;
+    margin-bottom: 90px;
 }
 
 .margin {
@@ -358,7 +352,7 @@ video {
 .link {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -381,26 +375,35 @@ video {
 .bold3 {
     color: red;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .para2{
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 300px;
     margin-right: 50px;
 }
 
 .link2 {
     color: red;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: underline;
+}
+
+.link2:hover {
+    font-size: 25px;
 }
 
 @media(max-width:952px) {
     .para2 {
         margin-left: 0px;
     }
+
+    video {
+        width: 100%;
+    }
+
 }
 
 .bold3 {
@@ -410,7 +413,7 @@ video {
 }
 
 .para3 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .section5 {
@@ -430,6 +433,7 @@ video {
 }
 
 .picture {
+    width: 400px;
     height: 300px;
     margin-right: 5px;
 }
@@ -442,18 +446,23 @@ video {
     .story {
         margin-bottom: 20px;
     }
+
+    .picture {
+        width: 100%;
+    }
 }
 
 .section6 {
     background-color: rgba(0, 0, 0, 0.7);
     height: 1200px;
+    width: 100%;
 }
 
 .culture {
     float: right;
     position: relative;
     top: -30px;
-    width: 800px;
+    width: 600px;
     height: 800px;
     z-index: 2;
 }
@@ -466,15 +475,15 @@ video {
 .row {
     width: 800px;
     display: flex;
-    margin-left: 250px;
-    margin-top: 120px;
+    margin-left: 150px;
+    margin-top: 165px;
     position: absolute;
     z-index: 3;
 }
 
 .row2 {
     display: flex;
-    margin-left: 250px;
+    margin-left: 150px;
     margin-top: 120px;
     position: relative;
     z-index: 4;
@@ -483,7 +492,7 @@ video {
 
 .row3 {
     display: flex;
-    margin-left: 250px;
+    margin-left: 150px;
     margin-top: 120px;
     position: relative;
     z-index: 4;
@@ -492,8 +501,8 @@ video {
 
 
 .explore {
-    height: 310px;
-    width: 400px;
+    height: 260px;
+    width: 300px;
     background-color: blue;
     position: absolute;
     left: 0px;
@@ -501,8 +510,9 @@ video {
 }
 
 .text {
+    width: 300px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
@@ -513,11 +523,11 @@ video {
 }
 
 .lion {
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 .small-margin {
-    margin-left: 410px;
+    margin-left: 310px;
     position: absolute;
     z-index: 2;
     color: white;
@@ -555,17 +565,17 @@ video {
 
 .link4picture1 {
     background-color: rgba(255, 255, 255, 0.2);
-    width: 400px;
-    height: 310px;
+    width: 300px;
+    height: 260px;
     position: absolute;
-    left: 400px;
+    left: 300px;
     z-index: 3;
 }
 
 .link4picture2 {
     background-color: none;
-    height: 310px;
-    width: 400px;
+    height: 260px;
+    width: 300px;
     position: absolute;
     left: -0px;
     z-index: 3;
@@ -573,28 +583,28 @@ video {
 
 .link4picture3 {
     background-color: none;
-    height: 310px;
-    width: 400px;
+    height: 260px;
+    width: 300px;
     position: absolute;
-    left: 400px;
+    left: 300px;
     z-index: 3;
 }
 
 .link4picture4 {
     background-color: rgba(255, 255, 255, 0.2);
-    height: 310px;
-    width: 600px;
+    height: 260px;
+    width: 500px;
     position: absolute;
-    left: 800px;
+    left: 600px;
     z-index: 3;
 }
 
 .link4picture5a {
     background-color: none;
     height: 800px;
-    width: 800px;
+    width: 600px;
     position: absolute;
-    left: 990px;
+    left: 740px;
     margin-top: -30px;
     z-index: 3;
 }
@@ -620,6 +630,8 @@ video {
     font-weight: 600;
     color: white;
     background-color: rgba(128, 0, 128, 6);
+    position: relative;
+    left: -300px;
 }
 
 .text-culture-large {
@@ -629,22 +641,31 @@ video {
     font-size: 35px;
     color: white;
     background-color: rgba(128, 0, 128, 6);
+    position: relative;
+    left: -300px;
 
 }
 
 .text-para {
+    width: 550px;
     border: 1px solid purple;
     font-size: 25px;
     font-weight: 500;
     color: white;
     background-color: rgba(128, 0, 128, 6);
+    position: relative;
+    left: -300px;
 }
 
 
 @media(max-width:952px){
-    .row, .row2 {
+    .row {
         margin-top: -25px;
        
+    }
+
+    .row2 {
+        margin-top: -70px;
     }
 
     .small-margin4-large {
@@ -679,7 +700,7 @@ video {
         margin-top: 120px;
         position: absolute;
         height: 1100px;
-        width: 810px;
+        width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
     }
@@ -699,6 +720,7 @@ video {
     }
 
     .text-decoration {
+        width: 200px;
         border: 1px solid purple;
         font-size: 20px;
         text-transform: uppercase;
@@ -708,12 +730,17 @@ video {
     }
 
     .text-culture {
+        width: 300px;
         border: 1px solid purple;
         font-weight: 700;
         font-size: 35px;
         color: white;
         background-color: rgba(128, 0, 128, 6);
     
+    }
+
+    .text-para {
+        left: 0px;
     }
 
     .dots {
@@ -760,6 +787,7 @@ video {
 }
 
 footer {
+    width: 100%;
     background-color: black;
 }
 
@@ -811,17 +839,17 @@ footer {
     margin-left: 10px ;
     color: white;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: -50px;
     z-index: 3;
 }
 
 .top {
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .helpful {
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     color: blue;
 }
@@ -833,19 +861,20 @@ footer {
 .number1 {
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 .footer-links {
     text-decoration: none;
     margin-bottom: 30px;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
+    width: 180px;
 }
 
 .contact-info {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     margin-top: 25px;
     margin-right: 40px;
@@ -853,7 +882,7 @@ footer {
 
 .UoD {
     margin-right: 100px;
-    font-size: 25px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
 }
 

@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-@media(max-width:952px){
+@media(max-width:700px){
     body {
         overflow-x: hidden;
     }

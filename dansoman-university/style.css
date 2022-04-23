@@ -2,8 +2,17 @@
     body {
     overflow-x: hidden;
     }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 header {
     height: 300px;
@@ -161,7 +170,7 @@ header {
     margin: auto;
     text-align: center;
     position: relative;
-    top: -50px;
+    top: -30px;
     margin-bottom: 30px;
 }
 
@@ -669,6 +678,7 @@ video {
     background-color: rgba(128, 0, 128, 6);
     position: relative;
     left: -300px;
+    margin-top: 20px;
 }
 
 
@@ -890,7 +900,7 @@ footer {
     text-decoration: none;
     font-size: 20px;
     color: white;
-    margin-top: 25px;
+    margin-top: -0px;
     margin-right: 40px;
 }
 
@@ -916,4 +926,8 @@ footer {
 
 .margin-right {
     margin-right: 20px;
+}
+
+.small-top {
+    margin-top: 10px;
 }

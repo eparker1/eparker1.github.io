@@ -22,12 +22,12 @@ var i = 0;
 
 function Switch() {
     section1.style.background = `url(${arr[i]})`;
-    section1.style.backgroundSize = "contain";
+    section1.style.backgroundSize = "cover";
     section1.style.backgroundRepeat = "no-repeat";
     section1.style.width = "100vw";
-    section1.style.height = "500px";
+    section1.style.height = "300px";
+
     i++;
-    console.log(i);
 
 
     if (i == arr.length){
@@ -37,3 +37,17 @@ function Switch() {
 };
 
 setInterval(Switch,4000);
+
+const title1= document.querySelector("#title1");
+const title2 = document.querySelector(".title2");
+const button1 = document.querySelector(".button1");
+
+function animateDown() {
+    title1.classList.toggle("left");
+    title2.classList.toggle("top");
+    button1.classList.toggle("right");
+}
+
+setInterval(animateDown,6000);
+
+//section2 

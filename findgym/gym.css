@@ -282,6 +282,7 @@ a {
 
     /* move-up button*/
     #move {
+        text-align: center;
         color: red;
         border: 1px solid red;
         width: 30px;
@@ -296,6 +297,52 @@ a {
         color: red;
     }
 
+    /* section4 */
+    #features {
+        margin: 70px 10px 70px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #slideimage-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .slide-head {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    #prev, #next {
+        color: white;
+        background: red;
+    }
+
+    #image-slide {
+        height: 250px;
+        width: 100%;
+        
+    }
+
+    #image-slide.hover {
+        opacity: 0.7;
+    }
+
+    .image-text {
+        background: rgba(0, 0 , 0, 0.4);
+        height: 30px;
+    }
 }
 
 .locations {

@@ -53,8 +53,8 @@ setInterval(animateDown,6000);
 const navbranding = document.querySelector("#move");
 const buttonmove = document.getElementById("move");
 
-function Up(e){
-    e.preventDefault();
+function Up(){
+    // e.preventDefault();
     navbranding.scrollIntoView({
         behavior: "smooth"
     });
@@ -62,12 +62,37 @@ function Up(e){
 
 buttonmove.addEventListener("click", Up);
 
-// document.querySelector("#move")(anchor  =>{
-//     anchor.addEventListener("click", function(e){
-//         e.preventDefault();
-//         document.querySelector("move").scrollIntoView({
-//             behavior: "smooth"
-//         })
-//     })
-// }) 
+//section4
+const images = new Array("image5.jpg","image6.jpg","image7.jpg");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+const image = document.getElementById("image-slide");
 
+var position = 0;
+image.src = images[0];
+
+function ImagesliderNEXT (){
+    position ++;
+
+    if (position >= images.length){
+        position = 0;
+    }
+    image.src = images[position];
+
+}
+
+next.addEventListener("click", ImagesliderNEXT);
+
+function ImagesliderPREV() {
+    if (position <= 0) {
+        image.src = images[0];
+        
+    }
+    else {
+        position --;
+
+        image.src = images[position];
+    }
+}
+
+prev.addEventListener("click", ImagesliderNEXT);

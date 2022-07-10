@@ -342,6 +342,14 @@ a {
     .image-text {
         background: rgba(0, 0 , 0, 0.4);
         height: 30px;
+        margin-top: -5px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .image-text.hover {
+        background: red;
+        color: white;
     }
 }
 

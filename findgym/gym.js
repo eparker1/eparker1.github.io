@@ -64,12 +64,16 @@ buttonmove.addEventListener("click", Up);
 
 //section4
 const images = new Array("image5.jpg","image6.jpg","image7.jpg");
+const texts = new Array("the ball", "the cow", "the goat");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const image = document.getElementById("image-slide");
+const image_text = document.querySelector(".image-text");
+
 
 var position = 0;
 image.src = images[0];
+image_text.textContent = texts[0];
 
 function ImagesliderNEXT (){
     position ++;
@@ -78,6 +82,8 @@ function ImagesliderNEXT (){
         position = 0;
     }
     image.src = images[position];
+    image_text.textContent = texts[position];
+
 
 }
 
@@ -86,13 +92,42 @@ next.addEventListener("click", ImagesliderNEXT);
 function ImagesliderPREV() {
     if (position <= 0) {
         image.src = images[0];
+        image_text.textContent = texts[0];
+
         
     }
     else {
         position --;
 
         image.src = images[position];
+        image_text.textContent = texts[position];
+
     }
 }
 
 prev.addEventListener("click", ImagesliderNEXT);
+
+function auto_slide(){
+   image.src = images[position];
+   image_text.textContent = texts[position];
+
+   position++;
+
+   if (position >= images.length){
+       position = 0;
+   }
+   
+}
+
+setInterval(auto_slide, 6000);
+
+const image_slide = document.querySelector("#image-slide");
+const image_slide_div = document.querySelector("#slide-image");
+
+function hover(){
+    image_slide.classList.toggle("hover");
+    image_text.classList.toggle("hover");
+}
+
+image_slide_div.addEventListener('mouseover', hover);
+

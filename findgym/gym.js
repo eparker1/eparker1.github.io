@@ -64,7 +64,7 @@ buttonmove.addEventListener("click", Up);
 
 //section4
 const images = new Array("image5.jpg","image6.jpg","image7.jpg");
-const texts = new Array("the ball", "the cow", "the goat");
+const texts = new Array("High Intensity Interval Training", "Hot Punch", "Pump Up");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const image = document.getElementById("image-slide");

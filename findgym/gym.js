@@ -50,4 +50,24 @@ function animateDown() {
 
 setInterval(animateDown,6000);
 
-//section2 
+const navbranding = document.querySelector("#move");
+const buttonmove = document.getElementById("move");
+
+function Up(e){
+    e.preventDefault();
+    navbranding.scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+buttonmove.addEventListener("click", Up);
+
+// document.querySelector("#move")(anchor  =>{
+//     anchor.addEventListener("click", function(e){
+//         e.preventDefault();
+//         document.querySelector("move").scrollIntoView({
+//             behavior: "smooth"
+//         })
+//     })
+// }) 
+

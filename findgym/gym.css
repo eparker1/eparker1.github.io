@@ -33,7 +33,7 @@ a {
     gap: 60px;
 }
  
-.nav-branding {
+#nav-branding {
     font-size: 2rem;
     font-style: italic;
 }
@@ -71,7 +71,7 @@ a {
     header {
         width: 100vw;
         position: fixed;
-        z-index: 3;
+        z-index: 4;
     }
 
     .hamburger {
@@ -222,6 +222,7 @@ a {
         background-size: cover;
         position: relative;
         top: 70px;
+        z-index: 3;
     }
 
     .writing1 {
@@ -234,6 +235,65 @@ a {
 
     b {
         margin-left: 50px;
+    }
+
+    /* section3  */
+    #section3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        background: rgba(0, 0 , 0, 0.4);
+    }
+
+    .sec {
+        position: relative;
+        margin-bottom: 20px;
+        margin: auto;
+        z-index: 3;
+    }
+
+    .circle {
+        height: 15px;
+        width: 15px;
+        border-radius: 7.5px;
+        background: red;
+        float: left;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .text {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .heading {
+        color: black;
+        font-weight: 500;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .paragraph {
+        color: black;
+        width: 300px;
+        margin-left: 23px;
+    }
+
+    /* move-up button*/
+    #move {
+        color: red;
+        border: 1px solid red;
+        width: 30px;
+        position: fixed;
+        z-index: 1;
+        transform: rotate(-90deg);
+        top: 500px;
+
+    }
+
+    .arrow {
+        color: red;
     }
 
 }
@@ -253,4 +313,7 @@ a {
     
 } */
 
-
+/* #section3 {
+    position: relative;
+    background: red;
+} */

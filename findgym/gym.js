@@ -53,8 +53,8 @@ setInterval(animateDown,6000);
 const navbranding = document.querySelector("#move");
 const buttonmove = document.getElementById("move");
 
-function Up(){
-    // e.preventDefault();
+function Up(e){
+    e.preventDefault();
     navbranding.scrollIntoView({
         behavior: "smooth"
     });

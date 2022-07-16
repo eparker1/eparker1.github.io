@@ -351,6 +351,57 @@ a {
         background: red;
         color: white;
     }
+
+    /* #section5  */
+    #section5 {
+        background: url("image8.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+    }
+
+    /* section6 */
+    #tablediv {
+        margin: 20px 20px;
+    }
+
+    #table {
+        border-collapse: separate;
+        border-spacing: 20px 40px;
+        /* border: 1px solid black */
+        table-layout: fixed;
+
+    }
+
+    #signup {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .beingbody {
+        font-weight: 600;
+        font-size: 35px;
+        color: red;
+        opacity: 0.7;
+        word-spacing: 20px;
+    }
+
+    .builders {
+        color: rgba(0, 0 , 0, 0.6);
+        letter-spacing: 10px;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .signup {
+        border-radius: 20px;
+        height: 40px;
+        background-color: red;
+        color: black;
+        padding: 10px;
+    }
+
 }
 
 .locations {

@@ -291,6 +291,8 @@ a {
         z-index: 1;
         transform: rotate(-90deg);
         top: 500px;
+        background: rgba(255, 255, 255, 0);
+
 
     }
 
@@ -611,7 +613,50 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
+
+    .circle {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background: rgba(255, 255, 255, 0);
+    }
+
+    #phone {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-bottom: 60px;
+    }
+
+    .phone {
+        margin-bottom: 10px;
+    }
+
+    .foot {
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footwrite{
+        width: 90%;
+        margin: auto;
+        margin: 20px 20px;
+    }
+
+    .fa-copyright {
+        fill: none;
+    }
+
+    .fa-dumbbell {
+        font-size: 30px;
+      
+    }
+
 }
 
 .locations {

@@ -48,17 +48,12 @@ function animateDown() {
 
 setInterval(animateDown,6000);
 
-const navbranding = document.querySelector("#move");
-const buttonmove = document.getElementById("move");
+const buttonmove = document.querySelector("#move");
 
-function Up(e){
-    e.preventDefault();
-    navbranding.scrollIntoView({
-        behavior: "smooth"
-    });
-}
-
-buttonmove.addEventListener("click", Up);
+buttonmove.addEventListener("click", ()=>{
+    const el = document.getElementById('section1');
+    el.scrollIntoView({behavior:"smooth"});
+})
 
 //section4
 const images = new Array("image5.jpg","image6.jpg","image7.jpg");

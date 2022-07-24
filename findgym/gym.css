@@ -316,6 +316,8 @@ a {
     .slide-head {
         font-weight: 500;
         font-size: 25px;
+        margin: 10px 10px;
+
     }
 
     .buttons {
@@ -431,7 +433,7 @@ a {
         color: red;
     }
 
-    th {
+    .thead {
         background-color: red;
         color: white;
         font-weight: 500;
@@ -457,7 +459,10 @@ a {
     }
     
     .one {
+        font-weight: 500;
+        font-size: 25px;
         margin: 10px 10px;
+        color: red;
     }
 
     .client {
@@ -506,6 +511,15 @@ a {
     }
 
     /* Calculator */
+    #Bmi {
+        background: url("image9.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        margin-bottom: 70px;
+        color: white;
+    }
 
     .checkbutton {
         display: flex;
@@ -554,21 +568,17 @@ a {
         margin-bottom: 40px;
     }
 
-    #Bmi {
-        margin-left: 10px;
-    }
-
     .bmitable, .numerals:nth-child(1), .child2{
         width: 300px;
         border-collapse: collapse;
-        border: 1px solid black;
+        border: 1px solid white;
         table-layout: fixed;
         margin-left: 10px;
-        border-radius: 5px;
+        background: red;
     }
 
     .numerals:nth-child(1), .child2{
-        color: black;
+        color: white;
         text-align: center;
     }
 

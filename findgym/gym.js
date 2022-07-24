@@ -131,3 +131,77 @@ function hover(){
 
 image_slide_div.addEventListener('mouseover', hover);
 
+
+//the bmi calculator 
+const weight = document.getElementById("weight");
+const height = document.getElementById("height");
+
+
+function placeholder1() {
+    weight.placeholder = "Weight/kg";
+    height.placeholder = "height/cm";
+    weight.value = '';
+    height.value = '';
+}
+
+function placeholder2() {
+    weight.placeholder = "Weight/lbs";
+    height.placeholder = "height/feet";
+    weight.value = '';
+    height.value = '';
+}
+
+
+function Calculate(){
+    const ans = document.getElementById("answer");
+    ans.style.color = "white";
+    if (weight.value == '' || height.value == ''){
+        ans.innerHTML = "ERROR: One or Two fields have not been field";
+    }
+    
+    else{
+
+        if (weight.placeholder == "Weight/kg" && height.value == "height/cm"){
+            var answer = weight.value/(height.value/100)(Math.exp(2));
+            ans.style.color = "white";
+            ans.innerHTML = "your bmi is " + answer;
+        }
+        // else {
+        //     var answer = (weight.value * 0.453592) / (height.value * 0.3048)(Math.exp(2));
+        //     ans.style.color = "white";
+        //     ans.innerHTML = "your bmi is " + answer;
+        // }
+        
+    }
+
+}
+
+const metric = document.getElementById("metric");
+const imperial = document.getElementById("imperial");
+
+function button(){
+    if (metric.checked == true){
+        placeholder1()
+        imperial.checked == false;
+    }
+    else if (imperial.checked == true){
+        placeholder2()
+        metric.checked == false;
+    }
+}
+
+metric.addEventListener("click", button);
+imperial.addEventListener("click", button);
+
+// setInterval(button, 100);
+
+// if (weight.value != "" || height.value != "" ) {
+//     metric.addEventListener('click', placeholder1);
+//     imperial.addEventListener('click', placeholder2);
+
+// }
+
+// if (metric.checked == true){
+//     console.log('yes');
+//     placeholder1()
+// }

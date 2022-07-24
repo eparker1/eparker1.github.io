@@ -328,6 +328,7 @@ a {
     #prev, #next {
         color: white;
         background: red;
+        margin-left: 7px;
     }
 
     #image-slide {
@@ -374,11 +375,17 @@ a {
     }
 
     #table {
-        border-collapse: separate;
+        width: 700px;
+        height: 700px;
+        border-collapse: collapse;
         border-spacing: 40px 20px;
         border: 1px solid black;
         table-layout: fixed;
         
+    }
+
+    td:nth-child(2){
+        border-collapse: separate;
     }
 
     #signup {
@@ -432,7 +439,7 @@ a {
 
     }
 
-    td:nth-child(1){
+    .days{
         color: white;
     }
 
@@ -457,7 +464,6 @@ a {
         background: rgba(0, 0 , 0, 0.4);
         border-radius: 10px;
         margin: 10px 10px;
-        height: 250px;
 
     }
 
@@ -499,14 +505,17 @@ a {
         margin: 0px 0px 15px 10px;
     }
 
+    /* Calculator */
+
     .checkbutton {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 200px;
+        margin-bottom: 20px;
     }
 
-    .metricdiv {
+    .metricdiv, .theinput {
         display: inline-flex;
         margin-left: 10px;
     }
@@ -522,6 +531,47 @@ a {
     #imperial {
         margin: 3px 0px 0px 5px;
     }
+
+    #weight, #height {
+        width: 70px;
+        margin-right: 50px;
+    }
+
+    .calculate {
+        margin-top: 20px;
+    }
+
+    #submit {
+        border-radius: 20px;
+        color: white;
+        background: red;
+        font-weight: 600;
+        padding: 10px;
+        margin: 0px 0px 20px 10px;
+    }
+
+    #answer {
+        margin-bottom: 40px;
+    }
+
+    #Bmi {
+        margin-left: 10px;
+    }
+
+    .bmitable, .numerals:nth-child(1), .child2{
+        width: 300px;
+        border-collapse: collapse;
+        border: 1px solid black;
+        table-layout: fixed;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    .numerals:nth-child(1), .child2{
+        color: black;
+        text-align: center;
+    }
+
 
 }
 

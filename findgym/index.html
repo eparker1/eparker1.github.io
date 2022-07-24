@@ -134,49 +134,49 @@
                         <th>6:00am-8:00pm</th>
                     </tr>
                     <tr>
-                        <td>Monday</td>
+                        <td class="days">Monday</td>
                         <td></td>
                         <td class="workout">Spinning Class </td>
                         <td></td>
                         <td class="workout">Spinning Class</td>
                     </tr>
                     <tr>
-                        <td>Tuesday </td>
+                        <td class="days">Tuesday </td>
                         <td class="workout">Pilates</td>
                         <td></td>
                         <td class="workout">Pilates</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Wednesday</td>
+                        <td class="days">Wednesday</td>
                         <td class="workout">Booty & Glutes</td>
                         <td class="workout">Booty & Glutes</td>
                         <td></td>
                         <td class="workout">Booty & Glutes</td>
                     </tr>
                     <tr>
-                        <td>Thursday</td>
+                        <td class="days">Thursday</td>
                         <td></td>
                         <td></td>
                         <td class="workout">Abs & Core</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Friday</td>
+                        <td class="days">Friday</td>
                         <td></td>
                         <td class="workout">Upper Body</td>
                         <td></td>
                         <td class="workout">Abs & Core</td>
                     </tr>
                     <tr>
-                        <td>Saturday</td>
+                        <td class="days">Saturday</td>
                         <td></td>
                         <td class="workout">Upper Body</td>
                         <td></td>
                         <td class="workout">Abs & Core</td>
                     </tr>
                     <tr>
-                        <td>Sunday</td>
+                        <td class="days">Sunday</td>
                         <td colspan="4" class="restday">REST DAY</td>
                     </tr>
                 </table>
@@ -261,7 +261,40 @@
                     <input type="checkbox" id="imperial">
                 </div>
             </div>
+            <div class="theinput">
+                <input type="text" placeholder="Weight/kg" id="weight">
+                <input type="text" placeholder="Height/cm" id="height">
+            </div>
+            <div class="calculate">
+                <input type="submit" value="Calculate" id="submit" onclick="Calculate()">
+            </div>
+            <p id="answer"></p>
+            <table class="bmitable" cellpassing = "10">
+                <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                </tr>
+                <tr>
+                    <td class="numerals">Below 18.5</td>
+                    <td class="child2">Underweight</td>
+                </tr>
+                <tr>
+                    <td class="numerals">18.5 - 24.9</td>
+                    <td class="child2">Normal</td>
+                </tr>
+                <tr>
+                    <td class="numerals">25 - 29.9</td>
+                    <td class="child2">Overweight</td>
+                </tr>
+                <tr>
+                    <td class="numerals">30 and above</td>
+                    <td class="child2">Obese</td>
+                </tr>
+                
+            </table>
+            
         </div>
+
        
 
   

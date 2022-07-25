@@ -584,7 +584,34 @@ a {
         text-align: center;
     }
 
+    footer {
+        background: #262626;
 
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        align-items: center;
+    }
+
+    .fitness {
+        color: white;
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    i {
+        font-weight: 500;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .locations {

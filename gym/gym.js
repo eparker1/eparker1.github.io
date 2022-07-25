@@ -3,8 +3,6 @@ const navMenu = document.querySelector(".nav-menu");
 const navlinkloc = document.querySelector(".nav-link-loc");
 const locations = document.querySelector(".locations");
 
-console.log(navlinkloc);
-
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -135,6 +133,7 @@ image_slide_div.addEventListener('mouseover', hover);
 //the bmi calculator 
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
+const ans = document.getElementById("answer");
 
 
 function placeholder1() {
@@ -142,13 +141,16 @@ function placeholder1() {
     height.placeholder = "height/cm";
     weight.value = '';
     height.value = '';
+    ans.innerHTML = ' ';
 }
 
 function placeholder2() {
     weight.placeholder = "Weight/lbs";
-    height.placeholder = "height/feet";
+    height.placeholder = "height/inches";
     weight.value = '';
     height.value = '';
+    ans.innerHTML = ' ';
+
 }
 
 
@@ -156,25 +158,31 @@ function Calculate(){
     const ans = document.getElementById("answer");
     ans.style.color = "white";
     if (weight.value == '' || height.value == ''){
-        ans.innerHTML = "ERROR: One or Two fields have not been field";
+        ans.innerHTML = "ERROR: One or Two fields have not been filled";
     }
     
     else{
 
-        if (weight.placeholder == "Weight/kg" && height.value == "height/cm"){
-            var answer = weight.value/(height.value/100)(Math.exp(2));
+        if (metric.checked == true && imperial.checked == false && weight.placeholder != " " && height.value != " "){
+            const answer = weight.value/(height.value/100)**2;
             ans.style.color = "white";
-            ans.innerHTML = "your bmi is " + answer;
+            ans.innerHTML = "Your bmi is " + answer.toFixed(1);
+
         }
-        // else {
-        //     var answer = (weight.value * 0.453592) / (height.value * 0.3048)(Math.exp(2));
-        //     ans.style.color = "white";
-        //     ans.innerHTML = "your bmi is " + answer;
-        // }
+        else if (imperial.checked == true && metric.checked == false && weight.placeholder != " " && height.value != " "){
+            const answer2 = (weight.value * 703) / (height.value)**2;
+            ans.innerHTML = "Your bmi is " + answer2.toFixed(1);
+
+        }
         
     }
 
+    if (metric.checked == false && imperial.checked == false){
+        ans.innerHTML = "Neither metric nor imperial is checked"
+    }
+
 }
+
 
 const metric = document.getElementById("metric");
 const imperial = document.getElementById("imperial");
@@ -192,16 +200,3 @@ function button(){
 
 metric.addEventListener("click", button);
 imperial.addEventListener("click", button);
-
-// setInterval(button, 100);
-
-// if (weight.value != "" || height.value != "" ) {
-//     metric.addEventListener('click', placeholder1);
-//     imperial.addEventListener('click', placeholder2);
-
-// }
-
-// if (metric.checked == true){
-//     console.log('yes');
-//     placeholder1()
-// }

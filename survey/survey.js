@@ -43,7 +43,7 @@ const callback2function = function(entries){
             })
             items6.classList.remove("nav-items_show");
             items6.classList.add("nth_show");
-            icon.src = "ICON-PURPLE.png";
+            icon.src = "./images/ICON-PURPLE.png";
         }else if (entry.isIntersecting == true){
             menu.classList.remove("menu-items_show");
             items.forEach(item => {
@@ -63,17 +63,16 @@ const observer2 = new IntersectionObserver(callback2function, {
     threshold: 0.9,
     rootMargin: '-150px 0px 0px 0px'
 })
-
+ 
 
 observer2.observe(head);
-observer2.observe(menu2);
 
 
 //the nav bar
 const navbar = document.querySelector(".navbar");
 const nav = document.querySelector(".nav");
 const one = document.querySelector(".one");
-const two = document.querySelector(".two");
+// const two = document.querySelector(".two");
 const three = document.querySelector(".three");
 const four = document.querySelector(".four");
 const five = document.querySelector(".five");
@@ -83,10 +82,12 @@ navbar.addEventListener("click", () =>{
     navbar.classList.toggle("active");
     nav.classList.toggle("nav-active");
     one.classList.toggle("one1"); 
-    two.classList.toggle("two1"); 
+    // two.classList.toggle("two1"); 
     three.classList.toggle("three1"); 
     four.classList.toggle("four1"); 
     five.classList.toggle("five1"); 
     nth.classList.toggle("nth1"); 
 
 })
+
+

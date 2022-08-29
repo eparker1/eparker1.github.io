@@ -232,10 +232,6 @@ hr {
     height: 30px;
 }
 
-/* .boxx {
-    width: 500px;
-    height: 20px;
-} */
 
 .box1 {
     padding: 0px 20px 0px 20px;
@@ -396,6 +392,10 @@ footer {
     margin-bottom: 10px;
 }
 
+.numb {
+    color: white;
+}
+
 @media (max-width:768px){
     #bg {
         height: 300px;
@@ -435,8 +435,8 @@ footer {
 
     .nav-active {
         box-shadow: 0px 8px 12px rgb(0,0,0,0.17);
-        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-        backdrop-filter: blur(10px);
+        background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255,255,255,0.8));
+        backdrop-filter: blur(20px);
     }
 
     .one,.three , .four , .five , .nth{
@@ -509,7 +509,7 @@ footer {
         background-color: rgb(107, 0, 62, 0.6);
         position: absolute;
         z-index: 2;
-        top: 50px;
+        /* top: 50px; */
         width: 100vw;
         height: 250px;
     }
@@ -586,7 +586,7 @@ footer {
 @media (max-width:367px){
     .top1 {
         position: relative;
-        top: -20px;
+        top: -3px;
     }
 
 }

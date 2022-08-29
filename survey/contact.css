@@ -276,11 +276,6 @@ hr {
     flex-direction: row;
 }
 
-.calendar {
-    position: relative;
-    top: 35px;
-}
-
 .duration {
     position: relative;
     top: -40px;
@@ -394,6 +389,12 @@ footer {
 
 .numb {
     color: white;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (max-width:768px){

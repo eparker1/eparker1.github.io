@@ -80,8 +80,8 @@
             <form action="https://getform.io/f/aa144d44-e945-48bd-b803-837866ad9721" method="POST" enctype="multipart/form-data" onsubmit="reset()">
                 <p class="form-head">REQUESTING PARTY INFORMATION</p>
                 <label for="input-email" aria-required="true"><b>Contact Information</b> <span class="asterix">*</span></label><br><br>
-                <input type="email" name="email" required class="box"/><br><br>
-                <label for="input-first" aria-required="true"><b>Contact Name</b> <span class="asterix">*</span></label><br><br>
+                <input type="email" name="email" required class="box" placeholder="your email"/><br><br>
+                <label for="input-first" aria-required="true"><b>Name</b> <span class="asterix">*</span></label><br><br>
                 <input type = "text" id= "input-first" name="name" required class="box"/><br><br>
                 <label for="address" aria-required="true"><b>Address</b> <span class="asterix">*</span></label><br><br>
                 <input type = "text" id= "address" name="address" required class="box"/><br><br>
@@ -138,18 +138,22 @@
                 <textarea type="text" name="message" id="comment" cols="30" rows="10" placeholder="type your reason..."></textarea>
                 <div class="forms-row">
                     <div class="form side date-input">
-                        <div>
-                            <label for="need-by-date" aria-required="true"><b>Need by date</b> </label><br><br>
-                            <input name = "need-by-date" type="text" placeholder= "dd/mm/yyyy" class="box top1"/>
+                        <div class="display">
+                            <label for="need-by-date" aria-required="true"><b>Need by date</b> </label><br>
+                            <div class="date-input">
+                                <input name = "need-by-date" type="text" placeholder= "dd/mm/yyyy" class="box"/>
+                                <img src="./images/calendar.png" alt="" height="30px">
+                            </div>
                         </div>
-                        <img src="./images/calendar.png" alt="" height="30px" class="calendar">
                     </div>
                     <div class="form date-input">
-                        <div>
-                            <label for="close-date" aria-required="true"><b>Closing date (if applicable)</b> </label><br><br>
-                            <input name = "close-date" type="text" placeholder= "dd/mm/yyyy" class="box top"/>
+                        <div class="display">
+                            <label for="close-date" aria-required="true"><b>Closing date (if applicable)</b> </label><br>
+                            <div class="date-input">
+                                <input name = "close-date" type="text" placeholder= "dd/mm/yyyy" class="box"/>
+                                <img src="./images/calendar.png" alt="" height="30px">
+                            </div>
                         </div>
-                        <img src="./images/calendar.png" alt="" height="30px" class="calendar">
                     </div>
                 </div>
                 <p class="duration">please allow about 2 weeks</p>

@@ -1,234 +1,266 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree";
+
+}
+
 @font-face {
     font-family: "Bai Jamjuree";
     src: url("https://fonts.google.com/specimen/Bai+Jamjuree");
 }
 
 body {
-    width: 1440px;
     background: url("bg-header-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Bai Jamjuree";
     color: hsl(210, 10%, 33%);
     margin-top: 30px;
-    overflow-x: hidden;
 }
 
-.logo {
-    margin-bottom: 20px;
-    margin-left: 50%;
-
+.width {
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
 }
 
-.writing {
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.text {
+    margin-top: 20px;
     width: 500px;
-    margin-left: 38%;
     text-align: center;
 }
 
-.bold {
-    font-weight: 600;
-    font-size: xx-large;
-    margin-bottom: 0px;
-    
-}
-
-.opacity {
-    opacity: 70%;
-    font-size: 18px;
-    word-spacing: normal;
-    font-weight: 400;
-}
-
-.opacity2 {
-    opacity: 70%;
-    font-size: 18px;
-    word-spacing: normal;
-    font-weight: 400;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.download {
+.D-links {
     display: flex;
-    justify-content: center;
-    margin-left: -12%;
-}
-
-.second {
-    margin-right: 2%;
-}
-
-.border {
-    padding: 10px 25px 10px 25px;
-    margin: 5px;
-    border-radius: 20px;
-    color: white;
-    position: relative;
-    left: 10%;
-    margin-bottom: 50px;
-}
-
-.green {
-    background-color: hsl(171, 66%, 44%);
-}
-
-.blue {
-    background-color: hsl(233, 100%, 69%);
-}
-
-.paragraph2 {
-    width: 500px;
-    margin-left: 38%;
-    margin-bottom: 50px;
-}
-
-.bold2 {
-    width: 455px;
-    font-weight: 600;
-    font-size: x-large;
-    text-align: center;
-    margin-left: 5px;
-    margin-bottom: 0px;
-}
-
-.margin {
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.margin2 {
-    margin-right: 100px;
-    margin-left: 80px;
-}
-
-.laptop {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    position: relative;
-    left: -100px;
-    margin-bottom: 50px;
 }
 
-.computer-image {
-    margin-right: 100px;
+.ios, .android {
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0px -5px ;
+    color: white;
+}
+
+.ios {
+    background: hsl(171, 66%, 44%);
+    margin-right: 20px;
+    padding: 20px 30px 20px 30px;
+}
+
+.android {
+    padding: 20px;
+    background: hsl(233, 100%, 69%);
+}
+
+.head2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 70px;
 }
 
 .text1 {
-    margin: 20px;
-    display: inline flex;
+    margin-top: 20px;
+    width: 550px;
+    text-align: center;
 }
 
-.text-bold1 {
-    width: 300px;
-    font-weight: 600;
-    font-size: larger;
-}
-
-.text-para {
-    margin-bottom: 50px;
-}
-
-.image-devices {
-    margin-left: 22%;
-}
-
-.container {
+.laptop-sec {
+    margin-top: 30px;
     display: flex;
-    margin-left: 21%;
-    margin-bottom: 100px;
-}
-
-.center {
-    justify-content: center;
-}
-
-.text-bold2 {
-    width: 300px;
-    font-weight: 600;
-    font-size: larger;
+    flex-direction: row;
     position: relative;
-    left: -40px;
+    left: -50px;
 }
 
-.opacity3 {
-    width: 350px;
-    opacity: 70%;
-    font-size: 18px;
-    word-spacing: normal;
-    font-weight: 400;
-    position: relative;
-    left: -130px;
-}
-
-.opacity4 {
-    width: 450px;
-    opacity: 70%;
-    font-size: 18px;
-    word-spacing: normal;
-    font-weight: 400;
-    position: relative;
-    left: -130px;
-}
-
-.margin1 {
-    margin-left: 10px;
-}
-
-.margin3 {
-    margin-left: 70px;
-}
-
-.margin4 {
-    margin-left: 100px;
-}
-
-.move {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.image-container {
+.computer-text {
     display: flex;
-    margin-left: 15%;
-    margin-bottom: 100px;
+    flex-direction: column;
+    margin: 80px 0px 0px 70px;
 }
 
-.margin-right {
-    margin-right: 100px;
+.title {
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.reduce {
-    height: 30px;
+.computer-text div {
+    margin-bottom: 60px;
+}
+
+.computer-text div p:nth-child(2){
+    width: 200px;
+}
+
+.devices {
+    margin: 30px 0px 40px 0px;
+}
+
+.workflow-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0px 50px 0px;
+}
+
+.workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.text2 {
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 footer {
-    background: hsl(201, 11%, 66%);
+    background: rgba(173, 216, 230, 0.3);
+}
+
+.content-sec {
+    width: 90%;
+    margin: auto;
+}
+
+
+.content {
     display: flex;
-    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.logo-foot {
-    height: 50px;
-    margin-right: 150px;
-    margin-left: 150px;
-    position: relative;
-    top: 25%;
-}
-
-.foot {
+.content1 {
     display: flex;
-    position: relative;
-    top: 25%;
-    margin-right: 30%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.words {
-    margin-right: 30px;
-    margin-top: -2%;
+.f-text, .f-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 30px 0px;
+
 }
 
-.next {
-    margin-top: 10%;
-    text-align: right;
+.f-text p:nth-child(1){
+    margin-bottom: 15px;
+}
+
+.social {
+    margin: 30px 0px 30px 10px;
+
+}
+
+@media (max-width:768px){
+    .laptop-sec {
+        flex-direction: column;
+        left: 0px;
+        align-items: center;
+    }
+
+    .head1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .head2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .workflow-row, .D-links {
+        flex-direction: column;
+     
+    }
+
+    .ios {
+        margin-right: 0px;
+    }
+
+    .text {
+        width: 300px;
+    }
+
+    .text1 {
+        width: 350px;
+    }
+
+    .computer, .devices  {
+        width: 300px;
+    }
+
+    .computer-text{
+        margin-left: 0px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .computer-text div p:nth-child(2){
+        text-align: center;
+    }
+
+    .workflow-row {
+        margin-top: 30px;
+    }
+
+    .workflow {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    .content, #icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .f-text{
+        align-items: center;
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    
+    .icon-logo {
+        margin-bottom: 30px;
+    }
+
+
+
 }

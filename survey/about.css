@@ -201,6 +201,7 @@ hr {
 }
 
 .paragraph {
+    text-align: justify;
     width: 700px;
 }
 

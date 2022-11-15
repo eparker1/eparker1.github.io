@@ -262,6 +262,11 @@ hr {
     cursor: pointer;
 }
 
+#custom-button2 {
+    padding: 5px;
+    cursor: pointer;
+}
+
 #custom-text {
     margin-left: 10px;
 }

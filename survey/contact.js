@@ -92,8 +92,16 @@ const real_file_button = document.querySelector("#real-file");
 const custom_button = document.querySelector("#custom-button");
 const custom_text = document.querySelector("#custom-text");
 
+const real_file_button2 = document.querySelector("#real-file2");
+const custom_button2 = document.querySelector("#custom-button2");
+const custom_text2 = document.querySelector("#custom-text2");
+
 custom_button.addEventListener("click", function(){
     real_file_button.click();
+});
+
+custom_button2.addEventListener("click", function(){
+    real_file_button2.click();
 });
 
 real_file_button.addEventListener("change", function(){
@@ -101,6 +109,15 @@ real_file_button.addEventListener("change", function(){
         custom_text.innerHTML = real_file_button.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
     }else {
         custom_text.innerHTML = "No file chosen";
+
+    }
+});
+
+real_file_button2.addEventListener("change", function(){
+    if (real_file_button2.value){
+        custom_text2.innerHTML = real_file_button2.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+    }else {
+        custom_text2.innerHTML = "No file chosen";
 
     }
 });

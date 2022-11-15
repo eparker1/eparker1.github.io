@@ -202,10 +202,13 @@ hr {
     width: 700px;
 }
 
-.drone-image {
+.drone-image1 {
     margin-top: 50px;
     object-fit: contain;
-    border: 1px solid black;
+}
+
+.drone-image2 {
+    object-fit: contain;
 }
 
 .list-services p, .list-services{
@@ -311,6 +314,17 @@ footer {
 
 .numb {
     color: white;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 768px){
@@ -440,13 +454,21 @@ footer {
     .services {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         font-size: 18px;
+
     }
 
     .image {
         display: flex;
+        flex-direction: column;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+
     }
 
     .services-para {
